@@ -2,7 +2,14 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args){
-     Scanner scanner = new Scanner(System.in);
+      //  try{
+       
+
+      //  } catch (Exception e){
+      //      System.out.println("Please enter a number");
+      //  }
+
+        Scanner scanner = new Scanner(System.in);
      System.out.println("Enter the first number: ");
      double num1 = scanner.nextDouble();
      System.out.println("Enter the second number: ");
@@ -24,7 +31,7 @@ public class Calculator {
         case "/":
           result = divide(num1,num2);      
         default:
-          System.out.println()                                                                            
+          System.out.println("You etnered wrong operator!");                                                                      
     }
     System.out.println("Result: "+ result);
 
@@ -43,4 +50,5 @@ public class Calculator {
       public static double multiply(double num1,double num2){
         return num1 * num2;
     }
-}
+
+    }
